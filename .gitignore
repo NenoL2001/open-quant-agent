@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+dist/
+build/
+
+# Local research outputs
+.agent_state/
+logs/
+multi_agent_experiments.jsonl
+EXPERIMENTS_LOG.md
+RESULTS.md
+FACTOR_KNOWLEDGE_BASE.md
+STRATEGY_KNOWLEDGE_BASE.md
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

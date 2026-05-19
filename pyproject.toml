@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "open-quant-agent"
+version = "0.1.0"
+description = "A standalone multi-agent quant research loop for factor discovery, portfolio backtesting, and strategy promotion."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "Noah" }
+]
+keywords = ["quant", "trading", "multi-agent", "backtesting", "research-agent", "factors"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "yfinance>=0.2.60",
+]
+
+[project.optional-dependencies]
+dl = [
+    "torch>=2.2",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+open-quant-agent = "open_quant_agent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/open_quant_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
