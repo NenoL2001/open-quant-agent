@@ -1,5 +1,7 @@
 # Agent Roles
 
+Robin's current runtime is deterministic and local-template based. These roles are structured boundaries in the research loop and future extension points for external runtimes.
+
 ## Factor Research Agent
 
 Proposes traditional and optional deep-learning factor hypotheses. The current implementation uses deterministic templates and recent experiment memory, making it runnable without an external LLM.

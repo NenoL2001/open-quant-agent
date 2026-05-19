@@ -13,6 +13,9 @@ build/
 # Local research outputs
 .agent_state/
 logs/
+runs/
+memory/
+registries/
 multi_agent_experiments.jsonl
 EXPERIMENTS_LOG.md
 RESULTS.md

@@ -3,9 +3,9 @@ requires = ["hatchling>=1.25"]
 build-backend = "hatchling.build"
 
 [project]
-name = "open-quant-agent"
+name = "robin"
 version = "0.1.0"
-description = "A standalone multi-agent quant research loop for factor discovery, portfolio backtesting, and strategy promotion."
+description = "Robin: a session-native agentic quant research platform for factor discovery, portfolio backtesting, and strategy promotion."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
@@ -39,6 +39,7 @@ dev = [
 ]
 
 [project.scripts]
+robin = "open_quant_agent.cli:main"
 open-quant-agent = "open_quant_agent.cli:main"
 
 [tool.hatch.build.targets.wheel]

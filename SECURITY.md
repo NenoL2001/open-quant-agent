@@ -1,6 +1,6 @@
 # Security
 
-Open Quant Agent does not need API keys for offline mode and does not place trades.
+Robin does not need API keys for offline mode and does not place trades.
 
 Do not commit:
 

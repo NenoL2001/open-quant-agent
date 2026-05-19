@@ -1,7 +1,9 @@
 # Workflow
 
 ```text
-Research
+Session Create / Load
+  -> Host Run
+  -> Research
   -> Debate
   -> Implementation
   -> Factor Backtest
@@ -16,16 +18,19 @@ Research
 
 ## One Cycle
 
-1. Load state and recent experiment memory.
-2. Select a research arm.
-3. Propose factor ideas.
-4. Debate each idea and reject weak candidates before implementation.
-5. Implement approved factors as panels.
-6. Validate factors with in-sample and out-of-sample metrics.
-7. Fuse available panels when multiple panels exist.
-8. Convert accepted/watch factors into strategy candidates.
-9. Backtest strategy candidates at the portfolio level.
-10. Write JSONL, checkpoint, and Markdown memory.
+1. Create or load a `QuantResearchSession`.
+2. `QuantHost` marks the session running and appends an audit event.
+3. Load state and recent experiment memory.
+4. Select a research arm.
+5. Propose factor ideas.
+6. Debate each idea and reject weak candidates before implementation.
+7. Implement approved factors as panels.
+8. Validate factors with in-sample and out-of-sample metrics.
+9. Fuse available panels when multiple panels exist.
+10. Convert accepted/watch factors into strategy candidates.
+11. Backtest strategy candidates at the portfolio level.
+12. Write JSONL, checkpoint, and Markdown memory inside the session directory.
+13. Save session status and best factor/strategy results.
 
 ## Research Arms
 
@@ -53,3 +58,19 @@ Strategy statuses:
 - `failed`
 
 The public default is conservative: a strategy with negative OOS excess remains on `watch` even if its absolute return and Sharpe look strong.
+
+## CLI
+
+Legacy direct run:
+
+```bash
+robin --offline-synthetic --max-iterations 1 --universe-size 24
+```
+
+Session-native run:
+
+```bash
+robin session create --goal "smoke" --offline-synthetic --no-network
+robin session run qrs_xxx --max-iterations 1 --offline-synthetic
+robin session inspect qrs_xxx
+```

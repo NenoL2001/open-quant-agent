@@ -1,6 +1,6 @@
 # Notice
 
-Open Quant Agent is a standalone public extraction and refactor of multi-agent quant research components originally prototyped inside the local `autotrade` project.
+Robin is a standalone public extraction and refactor of multi-agent quant research components originally prototyped inside the local `autotrade` project. It was initially published as Open Quant Agent and renamed to Robin as the project moved toward a session-native host architecture.
 
 The public repository intentionally excludes:
 

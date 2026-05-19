@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">Robin quant lion logo</title>
+  <desc id="desc">An airy small lion mascot with quant chart and grid elements.</desc>
+  <defs>
+    <linearGradient id="mane" x1="115" y1="22" x2="315" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffbf3f"/>
+      <stop offset="0.55" stop-color="#ff8a3d"/>
+      <stop offset="1" stop-color="#e8523f"/>
+    </linearGradient>
+    <linearGradient id="face" x1="145" y1="70" x2="270" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff1b8"/>
+      <stop offset="1" stop-color="#ffd16b"/>
+    </linearGradient>
+    <linearGradient id="quant" x1="330" y1="70" x2="610" y2="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#27c7b8"/>
+      <stop offset="1" stop-color="#3157ff"/>
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#13213a" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="240" rx="32" fill="#fbfcff"/>
+  <g opacity="0.55" stroke="#d8e0f0" stroke-width="1">
+    <path d="M346 54v120M398 54v120M450 54v120M502 54v120M554 54v120"/>
+    <path d="M320 78h270M320 118h270M320 158h270"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <path d="M196 31c19 18 29 18 53 10-4 23 1 34 20 50 26 22 31 55 18 84-16 35-48 51-87 50-39-1-71-19-85-54-12-30-6-62 20-84 19-16 25-28 21-51 22 9 33 10 40-5Z" fill="url(#mane)"/>
+    <path d="M130 85c-25-1-45 13-55 35 24 1 39 9 51 25M270 85c25-1 45 13 55 35-24 1-39 9-51 25" fill="none" stroke="#ff9f3d" stroke-width="12" stroke-linecap="round"/>
+    <path d="M132 103c-38 11-67 38-80 73 37-7 64-2 91 17M268 103c38 11 67 38 80 73-37-7-64-2-91 17" fill="none" stroke="#f26f44" stroke-width="10" stroke-linecap="round" opacity="0.72"/>
+    <circle cx="200" cy="139" r="70" fill="url(#face)"/>
+    <path d="M165 118c10-10 23-10 33 0M202 118c10-10 23-10 33 0" fill="none" stroke="#3b2b27" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="181" cy="137" r="6" fill="#2c2525"/>
+    <circle cx="219" cy="137" r="6" fill="#2c2525"/>
+    <path d="M200 150c10 0 18 4 18 11 0 9-8 17-18 17s-18-8-18-17c0-7 8-11 18-11Z" fill="#3b2b27"/>
+    <path d="M183 174c9 13 25 13 34 0" fill="none" stroke="#3b2b27" stroke-width="6" stroke-linecap="round"/>
+    <path d="M145 156c-26-7-48-6-68 3M146 173c-22 0-42 6-59 18M255 156c26-7 48-6 68 3M254 173c22 0 42 6 59 18" fill="none" stroke="#3b2b27" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+    <path d="M110 64c-22-13-52-14-82-2M105 82c-18-4-38-1-60 8M294 64c22-13 52-14 82-2M299 82c18-4 38-1 60 8" fill="none" stroke="#90a4c6" stroke-width="7" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M332 155 382 131l45 15 54-54 49 22 60-70" stroke="url(#quant)" stroke-width="12"/>
+    <path d="M332 181h260" stroke="#182033" stroke-width="8"/>
+    <path d="M376 92v68M426 106v55M478 78v83M528 93v68M578 64v97" stroke="#182033" stroke-width="8" opacity="0.72"/>
+    <path d="M363 92h26M413 106h26M465 78h26M515 93h26M565 64h26" stroke="#182033" stroke-width="8" opacity="0.72"/>
+  </g>
+
+  <text x="332" y="52" fill="#182033" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="34" font-weight="800" letter-spacing="0">Robin</text>
+  <text x="333" y="205" fill="#526174" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="600" letter-spacing="0">agentic quant research</text>
+</svg>
